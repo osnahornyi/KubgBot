@@ -20,15 +20,15 @@ def get_schedule(date_):
     payload1 = {
         "anchor": "",
         "logintoken": login_token,
-        "username": "osnahornyi.fitm22",
-        "password": "FPrXiQ6K",
+        "username": "osnahornyi",
+        "password": "12345",
     }
 
     answer_page_html = session.post("https://elearning.kubg.edu.ua/login/index.php", data=payload1)
     answer_page_soup = bs(answer_page_html.content, "lxml")
 
     payload2 = {
-        "id": "30129"
+        "id": "30128"
     }
 
     schedule_date_list = []
